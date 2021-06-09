@@ -3,16 +3,16 @@
   "host": "localhost",
   "port": 25060,
   "username": "postgres",
-  "password": "postgres",
+  "password": "secret",
   "database": "bbox",
   "synchronize": false,
   "logging": false,
-  "entities": ["src/entity/**/*.ts"],
+  "entities": ["src/infra/models/**/*.ts"],
   "migrations": ["src/migration/**/*.ts"],
   "subscribers": ["src/subscriber/**/*.ts"],
   "migrationsTableName": "migrations_tbl",
   "cli": {
-    "entitiesDir": "src/entity",
+    "entitiesDir": "src/infra/models",
     "migrationsDir": "src/migration",
     "subscribersDir": "src/subscriber"
   }
